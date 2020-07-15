@@ -1,0 +1,16 @@
+h1 {
+  color: goldenrod;
+  text-align: center;
+}
+h3 {
+  color: midnightblue;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  text-align: center;
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<h1>
+  <div
+    class="btn-group"
+    role="group"
+    aria-label="Button group with nested dropdown"
+  >
+    <div class="btn-group" role="group">
+      <button
+        id="btnGroupDrop1"
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        네이버 카페
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="https://cafe.naver.com/drhp"
+          >닥터헤드폰</a
+        >
+        <a class="dropdown-item" href="https://cafe.naver.com/samaudio"
+          >samaudio</a
+        >
+        <a class="dropdown-item" href="https://cafe.naver.com/fostex">1910C</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button
+        id="btnGroupDrop1"
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        청음샵
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="http://www.schezade.co.kr/"
+          >셰에라자드</a
+        >
+        <a class="dropdown-item" href="https://soundcat.com/">사운드캣</a>
+        <a class="dropdown-item" href="http://www.fostexshop.co.kr/">1910샵</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button
+        id="btnGroupDrop1"
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        기타 사이트
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a
+          class="dropdown-item"
+          href="http://blog.naver.com/luric?proxyReferer=https%3A%2F%2Fsearch.naver.com%2Fsearch.naver%3Fsm%3Dtab_hty.top%26where%3Dnexearch%26query%3Dluric%26oquery%3D%25EB%25A3%25A8%25EB%25A6%25AD%26tqi%3DUwe4xdp0YiRssEfWRPhssssssQw-394284"
+          >luric</a
+        >
+        <a class="dropdown-item" href="http://ko.goldenears.net/">사운드캣</a>
+      </div>
+    </div>
+  </div>
+</h1>
+
+{% endblock %}
