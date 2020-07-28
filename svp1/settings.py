@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'intro',
     'resite',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +128,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'svp1', 'static')
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID=1
+LOGIN_REDIRECT_URL = '/'
