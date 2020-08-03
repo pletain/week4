@@ -10,6 +10,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ post.title }}</h5>
           <p class="card-text">{{ post.content }}</p>
+          <p class="card-text">조회수 : {{ post.view_count }}</p>
           <p>{{ post.created_at }}</p>
           <a href="{% url 'posts:show' post.pk %}" class="btn btn-primary"
             >상세보기</a
@@ -27,3 +28,4 @@
   <a href="{% url 'account_signup' %}" class="btn btn-warning">회원가입</a>
 </h1>
 {% endif %} {% endblock %}
+
